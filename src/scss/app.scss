@@ -13,9 +13,10 @@
 /* Mixins, helpers and functions */
 @import "base/mixins";
 
-$body-color: green;
-
-$text-color: black;
+@use "vars" with (
+    $body-color: red,
+    $text-color: yellow
+);
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
